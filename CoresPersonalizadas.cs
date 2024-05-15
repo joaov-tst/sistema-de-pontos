@@ -7,30 +7,23 @@ using System.Threading.Tasks;
 
 namespace Sistema_de_Pontos
 {
-    internal class CoresPersonalizadas
+    internal static class CoresPersonalizadas
     {
-		private Color vermelhoEscuro;
-		private  Color vermelhoHover;
+		private static Color vermelhoEscuro = Color.FromArgb(166, 3, 3);
+		private static Color vermelhoHover = Color.FromArgb(166, 37, 37);
 
 
-		public Color VermelhoEscuro
+		public static Color VermelhoEscuro
 		{
 			get { return vermelhoEscuro; }
 			set { vermelhoEscuro = value; }
 		}
 
-
-		public Color VermelhoHover
+		public static Color VermelhoHover
         {
 			get { return vermelhoHover; }
 			set { vermelhoHover = value; }
 		}
-
-		public CoresPersonalizadas()
-		{
-			vermelhoEscuro = Color.FromArgb(166, 3, 3);
-            vermelhoHover = Color.FromArgb(166, 37, 37);
-        }
 
 	}
 }

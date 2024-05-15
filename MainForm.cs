@@ -14,12 +14,12 @@ namespace Sistema_de_Pontos
 {
     public partial class MainForm : Form
     {
-        private Color laranjaForte;
-        public Color laranjaClaro = Color.FromArgb(0, 255, 0);
-        public Color vermelhoPrincipal = Color.FromArgb(166, 3, 3);
-        public Color VermelhoError = Color.FromArgb(0, 255, 0);
-        public Color VerdeSucess = Color.FromArgb(0, 255, 0);
-        public Color CinzaFundo = Color.FromArgb(235, 236, 239);
+        //private Color laranjaForte;
+        //public Color laranjaClaro = Color.FromArgb(0, 255, 0);
+        //public Color vermelhoPrincipal = Color.FromArgb(166, 3, 3);
+        //public Color VermelhoError = Color.FromArgb(0, 255, 0);
+        //public Color VerdeSucess = Color.FromArgb(0, 255, 0);
+        //public Color CinzaFundo = Color.FromArgb(235, 236, 239);
         bool changeController = true;
         public MainForm()
         {
@@ -33,7 +33,7 @@ namespace Sistema_de_Pontos
         public void ConfiguraFormInicial()
         {
             #region Mensagem de boas vindas.
-            lblBemVindo.ForeColor = lblUsuario.ForeColor = vermelhoPrincipal;
+            lblBemVindo.ForeColor = lblUsuario.ForeColor = CoresPersonalizadas.VermelhoEscuro;
             #endregion
 
             this.StartPosition = FormStartPosition.CenterScreen;
