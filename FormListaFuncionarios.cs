@@ -1,5 +1,4 @@
-﻿using MetroFramework.Controls;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -11,17 +10,11 @@ using System.Windows.Forms;
 
 namespace Sistema_de_Pontos
 {
-    public partial class FormLoginAdmin : Form
+    public partial class FormListaFuncionarios : Form
     {
-        public FormLoginAdmin()
+        public FormListaFuncionarios()
         {
             InitializeComponent();
-        }
-
-        private void btnEntrar_Click(object sender, EventArgs e)
-        {
-            FormPainel f = new FormPainel();
-            f.ShowDialog();
         }
     }
 }

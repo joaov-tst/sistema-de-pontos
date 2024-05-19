@@ -32,3 +32,8 @@ D:\PUC Minas\C#\FSI - Extensão\Sistema de Pontos\obj\Debug\Sistema de Pontos.ex
 D:\PUC Minas\C#\FSI - Extensão\Sistema de Pontos\obj\Debug\Sistema de Pontos.pdb
 D:\PUC Minas\C#\FSI - Extensão\Sistema de Pontos\obj\Debug\Sistema_de_Pontos.FormLoginAdmin.resources
 D:\PUC Minas\C#\FSI - Extensão\Sistema de Pontos\obj\Debug\Sistema_de_Pontos.FormRegistro.resources
+D:\PUC Minas\C#\FSI - Extensão\Sistema de Pontos\obj\Debug\Sistema_de_Pontos.FormPainel.resources
+D:\PUC Minas\C#\FSI - Extensão\Sistema de Pontos\obj\Debug\Sistema_de_Pontos.FormListaRegistros.resources
+D:\PUC Minas\C#\FSI - Extensão\Sistema de Pontos\obj\Debug\Sistema_de_Pontos.FormSettings.resources
+D:\PUC Minas\C#\FSI - Extensão\Sistema de Pontos\obj\Debug\Sistema_de_Pontos.FormAjuda.resources
+D:\PUC Minas\C#\FSI - Extensão\Sistema de Pontos\obj\Debug\Sistema_de_Pontos.FormListaFuncionarios.resources

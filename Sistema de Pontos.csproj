@@ -80,17 +80,47 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CoresPersonalizadas.cs" />
+    <Compile Include="FormAjuda.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAjuda.Designer.cs">
+      <DependentUpon>FormAjuda.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormListaFuncionarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormListaFuncionarios.Designer.cs">
+      <DependentUpon>FormListaFuncionarios.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormLoginAdmin.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FormLoginAdmin.Designer.cs">
       <DependentUpon>FormLoginAdmin.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormPainel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPainel.Designer.cs">
+      <DependentUpon>FormPainel.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormRegistro.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FormRegistro.Designer.cs">
       <DependentUpon>FormRegistro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormListaRegistros.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormListaRegistros.Designer.cs">
+      <DependentUpon>FormListaRegistros.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormSettings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSettings.Designer.cs">
+      <DependentUpon>FormSettings.cs</DependentUpon>
     </Compile>
     <Compile Include="MainForm.cs">
       <SubType>Form</SubType>
@@ -101,11 +131,26 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RetornoRegistro.cs" />
+    <EmbeddedResource Include="FormAjuda.resx">
+      <DependentUpon>FormAjuda.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormListaFuncionarios.resx">
+      <DependentUpon>FormListaFuncionarios.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormLoginAdmin.resx">
       <DependentUpon>FormLoginAdmin.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormPainel.resx">
+      <DependentUpon>FormPainel.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormRegistro.resx">
       <DependentUpon>FormRegistro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormListaRegistros.resx">
+      <DependentUpon>FormListaRegistros.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSettings.resx">
+      <DependentUpon>FormSettings.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>

@@ -76,6 +76,7 @@
             this.btnEntrar.UseCustomForeColor = true;
             this.btnEntrar.UseSelectable = true;
             this.btnEntrar.UseStyleColors = true;
+            this.btnEntrar.Click += new System.EventHandler(this.btnEntrar_Click);
             // 
             // inputCPF
             // 
