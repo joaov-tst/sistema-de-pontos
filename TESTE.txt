@@ -1,2 +1,7 @@
+<<<<<<< HEAD
 jOAOZINHO ALTEROU ISSO AQUI
 Eu alterei novamente esta porra aqui
+=======
+jOAOZINHO ALTEROU ISSO AQUI, ISADORA TAMBÉM FIOTE
+
+>>>>>>> d9e9b733b0979bfffc0f30588cb23f48175a4bd5
