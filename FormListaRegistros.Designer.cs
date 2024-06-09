@@ -58,7 +58,6 @@
             this.lblporPeriodo = new System.Windows.Forms.Label();
             this.dataFim = new System.Windows.Forms.DateTimePicker();
             this.dataInicio = new System.Windows.Forms.DateTimePicker();
-            this.label1 = new System.Windows.Forms.Label();
             this.tableLayoutPanel1.SuspendLayout();
             this.pnlFiltroNome.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.iconBusca)).BeginInit();
@@ -92,7 +91,7 @@
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 92F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 75F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 97F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 110F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 113F));
             this.tableLayoutPanel1.Controls.Add(this.campoId, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.durExpediente, 8, 0);
             this.tableLayoutPanel1.Controls.Add(this.DurIntervalo, 7, 0);
@@ -118,7 +117,7 @@
             this.campoId.ForeColor = System.Drawing.Color.MistyRose;
             this.campoId.Location = new System.Drawing.Point(3, 0);
             this.campoId.Name = "campoId";
-            this.campoId.Size = new System.Drawing.Size(35, 47);
+            this.campoId.Size = new System.Drawing.Size(34, 47);
             this.campoId.TabIndex = 8;
             this.campoId.Text = "ID";
             this.campoId.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -129,9 +128,9 @@
             this.durExpediente.Dock = System.Windows.Forms.DockStyle.Fill;
             this.durExpediente.Font = new System.Drawing.Font("Comfortaa", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.durExpediente.ForeColor = System.Drawing.Color.MistyRose;
-            this.durExpediente.Location = new System.Drawing.Point(802, 0);
+            this.durExpediente.Location = new System.Drawing.Point(799, 0);
             this.durExpediente.Name = "durExpediente";
-            this.durExpediente.Size = new System.Drawing.Size(105, 47);
+            this.durExpediente.Size = new System.Drawing.Size(108, 47);
             this.durExpediente.TabIndex = 7;
             this.durExpediente.Text = "Duração do Expediente";
             this.durExpediente.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -142,7 +141,7 @@
             this.DurIntervalo.Dock = System.Windows.Forms.DockStyle.Fill;
             this.DurIntervalo.Font = new System.Drawing.Font("Comfortaa", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.DurIntervalo.ForeColor = System.Drawing.Color.MistyRose;
-            this.DurIntervalo.Location = new System.Drawing.Point(705, 0);
+            this.DurIntervalo.Location = new System.Drawing.Point(702, 0);
             this.DurIntervalo.Name = "DurIntervalo";
             this.DurIntervalo.Size = new System.Drawing.Size(91, 47);
             this.DurIntervalo.TabIndex = 6;
@@ -155,7 +154,7 @@
             this.CampoSaida.Dock = System.Windows.Forms.DockStyle.Fill;
             this.CampoSaida.Font = new System.Drawing.Font("Comfortaa", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CampoSaida.ForeColor = System.Drawing.Color.MistyRose;
-            this.CampoSaida.Location = new System.Drawing.Point(630, 0);
+            this.CampoSaida.Location = new System.Drawing.Point(627, 0);
             this.CampoSaida.Name = "CampoSaida";
             this.CampoSaida.Size = new System.Drawing.Size(69, 47);
             this.CampoSaida.TabIndex = 5;
@@ -168,7 +167,7 @@
             this.campoFimIntervalo.Dock = System.Windows.Forms.DockStyle.Fill;
             this.campoFimIntervalo.Font = new System.Drawing.Font("Comfortaa", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.campoFimIntervalo.ForeColor = System.Drawing.Color.MistyRose;
-            this.campoFimIntervalo.Location = new System.Drawing.Point(538, 0);
+            this.campoFimIntervalo.Location = new System.Drawing.Point(535, 0);
             this.campoFimIntervalo.Name = "campoFimIntervalo";
             this.campoFimIntervalo.Size = new System.Drawing.Size(86, 47);
             this.campoFimIntervalo.TabIndex = 4;
@@ -181,7 +180,7 @@
             this.CampoIntervalo.Dock = System.Windows.Forms.DockStyle.Fill;
             this.CampoIntervalo.Font = new System.Drawing.Font("Comfortaa", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CampoIntervalo.ForeColor = System.Drawing.Color.MistyRose;
-            this.CampoIntervalo.Location = new System.Drawing.Point(451, 0);
+            this.CampoIntervalo.Location = new System.Drawing.Point(448, 0);
             this.CampoIntervalo.Name = "CampoIntervalo";
             this.CampoIntervalo.Size = new System.Drawing.Size(81, 47);
             this.CampoIntervalo.TabIndex = 3;
@@ -194,7 +193,7 @@
             this.campoEntrada.Dock = System.Windows.Forms.DockStyle.Fill;
             this.campoEntrada.Font = new System.Drawing.Font("Comfortaa", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.campoEntrada.ForeColor = System.Drawing.Color.MistyRose;
-            this.campoEntrada.Location = new System.Drawing.Point(371, 0);
+            this.campoEntrada.Location = new System.Drawing.Point(368, 0);
             this.campoEntrada.Name = "campoEntrada";
             this.campoEntrada.Size = new System.Drawing.Size(74, 47);
             this.campoEntrada.TabIndex = 2;
@@ -207,7 +206,7 @@
             this.campoData.Dock = System.Windows.Forms.DockStyle.Fill;
             this.campoData.Font = new System.Drawing.Font("Comfortaa", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.campoData.ForeColor = System.Drawing.Color.MistyRose;
-            this.campoData.Location = new System.Drawing.Point(273, 0);
+            this.campoData.Location = new System.Drawing.Point(270, 0);
             this.campoData.Name = "campoData";
             this.campoData.Size = new System.Drawing.Size(92, 47);
             this.campoData.TabIndex = 1;
@@ -220,9 +219,9 @@
             this.campoNomeFuncionario.Dock = System.Windows.Forms.DockStyle.Fill;
             this.campoNomeFuncionario.Font = new System.Drawing.Font("Comfortaa", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.campoNomeFuncionario.ForeColor = System.Drawing.Color.MistyRose;
-            this.campoNomeFuncionario.Location = new System.Drawing.Point(44, 0);
+            this.campoNomeFuncionario.Location = new System.Drawing.Point(43, 0);
             this.campoNomeFuncionario.Name = "campoNomeFuncionario";
-            this.campoNomeFuncionario.Size = new System.Drawing.Size(223, 47);
+            this.campoNomeFuncionario.Size = new System.Drawing.Size(221, 47);
             this.campoNomeFuncionario.TabIndex = 0;
             this.campoNomeFuncionario.Text = "Funcionário";
             this.campoNomeFuncionario.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -351,7 +350,6 @@
             this.iconLimparFiltro.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.iconLimparFiltro.TabIndex = 6;
             this.iconLimparFiltro.TabStop = false;
-            this.iconLimparFiltro.Click += new System.EventHandler(this.iconLimparFiltro_Click);
             // 
             // pnlPorPeriodo
             // 
@@ -416,22 +414,11 @@
             this.dataInicio.Size = new System.Drawing.Size(116, 21);
             this.dataInicio.TabIndex = 2;
             // 
-            // label1
-            // 
-            this.label1.Font = new System.Drawing.Font("Comfortaa", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(283, 22);
-            this.label1.Margin = new System.Windows.Forms.Padding(0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(265, 33);
-            this.label1.TabIndex = 8;
-            this.label1.Text = "PONTOS REGISTRADOS:";
-            // 
             // FormListaRegistros
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(924, 512);
-            this.Controls.Add(this.label1);
             this.Controls.Add(this.pnlPorPeriodo);
             this.Controls.Add(this.iconLimparFiltro);
             this.Controls.Add(this.aplicarFiltros);
@@ -490,6 +477,5 @@
         private System.Windows.Forms.DateTimePicker dataFim;
         private System.Windows.Forms.Label ate;
         private System.Windows.Forms.DateTimePicker inputHora;
-        private System.Windows.Forms.Label label1;
     }
 }

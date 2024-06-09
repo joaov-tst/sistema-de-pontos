@@ -89,9 +89,10 @@ namespace Sistema_de_Pontos
         private void MainForm_Load(object sender, EventArgs e)
         {
             DAOSistemaDB.CriarBanco();
-            DAOSistemaDB.CreateTables();
-            DAOSistemaDB.TesteInserts();
-            DAOSistemaDB.CreateViews();
+            DAOSistemaDB.DBConection();
+            //DAOSistemaDB.CreateTables();
+            //DAOSistemaDB.TesteInserts();
+            //DAOSistemaDB.CreateViews();
         }
     }
 
