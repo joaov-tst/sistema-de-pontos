@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Sistema_de_Pontos.ClassesDAO;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +16,21 @@ namespace Sistema_de_Pontos
         public FormSettings()
         {
             InitializeComponent();
+            CarregaDados();
+        }
+
+        private void CarregaDados()
+        {
+            try
+            {
+                DataTable dataTable = new DataTable();
+                dataTable = DAOSistemaDB.getTeste();
+                dataGridView1.DataSource = dataTable;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
     }
 }

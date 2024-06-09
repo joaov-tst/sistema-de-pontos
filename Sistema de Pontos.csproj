@@ -79,7 +79,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ClassesDAO\DAORegistro.cs" />
+    <Compile Include="ClassesDAO\DAOSistemaDB.cs" />
     <Compile Include="CoresPersonalizadas.cs" />
+    <Compile Include="Entidades\Funcionario.cs" />
+    <Compile Include="Entidades\Registro.cs" />
     <Compile Include="FormAjuda.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -122,6 +126,18 @@
     <Compile Include="FormSettings.Designer.cs">
       <DependentUpon>FormSettings.cs</DependentUpon>
     </Compile>
+    <Compile Include="ItemRegistro.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ItemRegistro.Designer.cs">
+      <DependentUpon>ItemRegistro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ListItemRegistros.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListItemRegistros.Designer.cs">
+      <DependentUpon>ListItemRegistros.cs</DependentUpon>
+    </Compile>
     <Compile Include="MainForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -151,6 +167,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormSettings.resx">
       <DependentUpon>FormSettings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ItemRegistro.resx">
+      <DependentUpon>ItemRegistro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListItemRegistros.resx">
+      <DependentUpon>ListItemRegistros.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
@@ -182,9 +204,7 @@
   <ItemGroup>
     <None Include="bin\Debug\images\logo-solo.png" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="ClassesDAO\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="packages\Stub.System.Data.SQLite.Core.NetFramework.1.0.118.0\build\net46\Stub.System.Data.SQLite.Core.NetFramework.targets" Condition="Exists('packages\Stub.System.Data.SQLite.Core.NetFramework.1.0.118.0\build\net46\Stub.System.Data.SQLite.Core.NetFramework.targets')" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

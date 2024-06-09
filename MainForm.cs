@@ -1,4 +1,5 @@
 ﻿using MetroFramework.Controls;
+using Sistema_de_Pontos.ClassesDAO;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -26,6 +27,7 @@ namespace Sistema_de_Pontos
             InitializeComponent();
             ConfiguraFormInicial();
             LoadForm(new FormRegistro());
+            
 
         }
 
@@ -82,6 +84,14 @@ namespace Sistema_de_Pontos
         private void pnlMainForm_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void MainForm_Load(object sender, EventArgs e)
+        {
+            DAOSistemaDB.CriarBanco();
+            DAOSistemaDB.CreateTables();
+            DAOSistemaDB.TesteInserts();
+            DAOSistemaDB.CreateViews();
         }
     }
 
