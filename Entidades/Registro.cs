@@ -9,8 +9,8 @@ namespace Sistema_de_Pontos.Entidades
 {
     public class Registro
     {
-        private int id;
-        public int Id
+        pprivate long id;
+        public long Id
         {
             get { return id; }
             set { id = value; }
@@ -40,33 +40,44 @@ namespace Sistema_de_Pontos.Entidades
             set { entrada = value; }
         }
 
-        private DateTime inicioIntervalo;
-        public DateTime InicioIntervalo
+        private DateTime? inicioIntervalo;
+        public DateTime? InicioIntervalo
         {
             get { return inicioIntervalo; }
             set { inicioIntervalo = value; }
         }
 
-        private DateTime fimIntervalo;
+        private DateTime? fimIntervalo;
 
-        public DateTime FimIntervalo
+        public DateTime? FimIntervalo
         {
             get { return fimIntervalo; }
             set { fimIntervalo = value; }
         }
 
-        private DateTime saida;
+        rivate DateTime? saida;
 
-        public DateTime Saida
+        public DateTime? Saida
         {
             get { return saida; }
             set { saida = value; }
         }
 
-        public TimeSpan TotalIntervalo { get; private set; }
+        rivate TimeSpan? totalIntervalo;
 
-        public TimeSpan TotalExpediente { get; private set; }
+        public TimeSpan? TotalIntervalo
+        {
+            get { return totalIntervalo; }
+            set { totalIntervalo = value; }
+        }
 
+        private TimeSpan? totalExpediente;
+
+        public TimeSpan? TotalExpediente
+        {
+            get { return totalExpediente; }
+            set { totalExpediente = value; }
+        }
         //public Registro(string id, string nomeFuncionario, DateTime data, DateTime entrada, DateTime inicioIntervalo, DateTime fimIntervalo, DateTime saida)
         //{
         //    Id = id;
