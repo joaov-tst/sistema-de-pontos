@@ -71,13 +71,14 @@ namespace Sistema_de_Pontos.Entidades
             set { totalIntervalo = value; }
         }
 
-        private TimeSpan? totalExpediente;
+       private TimeSpan? totalExpediente;
 
         public TimeSpan? TotalExpediente
         {
             get { return totalExpediente; }
             set { totalExpediente = value; }
         }
+
         //public Registro(string id, string nomeFuncionario, DateTime data, DateTime entrada, DateTime inicioIntervalo, DateTime fimIntervalo, DateTime saida)
         //{
         //    Id = id;
