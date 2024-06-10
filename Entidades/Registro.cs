@@ -71,7 +71,7 @@ namespace Sistema_de_Pontos.Entidades
             set { totalIntervalo = value; }
         }
 
-        private TimeSpan? totalExpediente;
+       private TimeSpan? totalExpediente;
 
         public TimeSpan? TotalExpediente
         {
