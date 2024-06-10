@@ -9,7 +9,7 @@ namespace Sistema_de_Pontos.Entidades
 {
     public class Registro
     {
-        pprivate long id;
+        private long id;
         public long Id
         {
             get { return id; }
@@ -55,7 +55,7 @@ namespace Sistema_de_Pontos.Entidades
             set { fimIntervalo = value; }
         }
 
-        rivate DateTime? saida;
+        private DateTime? saida;
 
         public DateTime? Saida
         {
@@ -63,7 +63,7 @@ namespace Sistema_de_Pontos.Entidades
             set { saida = value; }
         }
 
-        rivate TimeSpan? totalIntervalo;
+        private TimeSpan? totalIntervalo;
 
         public TimeSpan? TotalIntervalo
         {
