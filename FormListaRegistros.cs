@@ -41,14 +41,14 @@ namespace Sistema_de_Pontos
             foreach (ItemRegistro novoItem in ItemRegistros)
             {
 
-                painelListagem.Controls.Add(novoItem);
-                ConfiguraItem(novoItem);
-                //if (novoItem.Item.Data.Date == inputData.Value.Date)
-                //{
-                //}
+                if (novoItem.Item.Data.Date == inputData.Value.Date)
+                {
+                    painelListagem.Controls.Add(novoItem);
+                    ConfiguraItem(novoItem);
+                }
             }
         }
-        public List<Registro> ObterRegistros()
+        public void ObterRegistros()
         {
             var registros = new List<Registro>();
 
@@ -97,37 +97,39 @@ namespace Sistema_de_Pontos
                     }
                 }
             }
-            return registros;
         }
         
 
-        //public void LimparFiltros()
-        //{
-        //    painelListagem.Controls.Clear();
-        //    foreach (ItemRegistro novoItem in registros)
-        //    {
-        //        painelListagem.Controls.Add(novoItem);
-        //        ConfiguraItem(novoItem);
-        //    }
-        //}
-
-        private void ObterRegistrosFiltrados()
+        public void LimparFiltros()
         {
-            string nomeFuncionario = inputNome.Text;
-            DateTime? dataRegistro = inputData.Value;
-            DateTime? horarioInicio = inputHora.Value;
-            DateTime? periodoInicio = dataInicio.Value;
-            DateTime? periodoFim = dataFim.Value;
-
-            var registrosFiltrados = ItemRegistros.Where(r =>
-                (string.IsNullOrEmpty(nomeFuncionario) || r.Item.NomeFuncionario.Contains(nomeFuncionario)) &&
-                (!dataRegistro.HasValue || r.Item.Data.Date == dataRegistro.Value.Date) &&
-                (!horarioInicio.HasValue || r.Item.Entrada.Hour == horarioInicio.Value.Date.Hour) &&
-                (!periodoInicio.HasValue || r.Item.Data.Date >= periodoInicio.Value.Date) &&
-                (!periodoFim.HasValue || r.Item.Data.Date <= periodoFim.Value.Date)
-            ).ToList();
+           painelListagem.Controls.Clear();
+           foreach (ItemRegistro novoItem in ItemRegistros)
+            {
+                painelListagem.Controls.Add(novoItem);
+                ConfiguraItem(novoItem);
+            }
         }
 
+        private List<ItemRegistro> RegistrosFiltrados()
+        {
+            string nomeFuncionario = inputNome.Text.ToUpper();
+            DateTime? dataRegistro = inputData.Value;
+
+            return ItemRegistros.Where(r =>
+                (string.IsNullOrEmpty(nomeFuncionario) || r.Item.NomeFuncionario.Contains(nomeFuncionario)) &&
+                (!dataRegistro.HasValue || r.Item.Data.Date == dataRegistro.Value.Date)).ToList();
+        }
+
+
+        public void AplicarFiltros(List<ItemRegistro> itensFiltrados)
+        {
+            painelListagem.Controls.Clear();
+            foreach (ItemRegistro item in itensFiltrados)
+            {
+                painelListagem.Controls.Add(item);
+                ConfiguraItem(item);
+            }
+        }
 
         public void CarregaRegistros()
         {
@@ -153,6 +155,16 @@ namespace Sistema_de_Pontos
             //ItemRegistro registro2 = new ItemRegistro(novoRegistro);
 
             //registros.Add(registro2);
+        }
+
+        private void iconLimparFiltro_Click(object sender, EventArgs e)
+        {
+            LimparFiltros();
+        }
+
+        private void aplicarFiltros_Click(object sender, EventArgs e)
+        {
+            AplicarFiltros(RegistrosFiltrados());
         }
 
 

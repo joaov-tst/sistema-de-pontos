@@ -23,7 +23,6 @@ D:\PUC Minas\C#\FSI - Extensão\Sistema de Pontos\bin\Debug\Newtonsoft.Json.xml
 D:\PUC Minas\C#\FSI - Extensão\Sistema de Pontos\bin\Debug\System.CodeDom.xml
 D:\PUC Minas\C#\FSI - Extensão\Sistema de Pontos\bin\Debug\System.Data.SQLite.xml
 D:\PUC Minas\C#\FSI - Extensão\Sistema de Pontos\obj\Debug\Sistema de Pontos.csproj.AssemblyReference.cache
-D:\PUC Minas\C#\FSI - Extensão\Sistema de Pontos\obj\Debug\Sistema_de_Pontos.FormAjuda.resources
 D:\PUC Minas\C#\FSI - Extensão\Sistema de Pontos\obj\Debug\Sistema_de_Pontos.FormListaFuncionarios.resources
 D:\PUC Minas\C#\FSI - Extensão\Sistema de Pontos\obj\Debug\Sistema_de_Pontos.FormLoginAdmin.resources
 D:\PUC Minas\C#\FSI - Extensão\Sistema de Pontos\obj\Debug\Sistema_de_Pontos.FormPainel.resources
@@ -31,7 +30,6 @@ D:\PUC Minas\C#\FSI - Extensão\Sistema de Pontos\obj\Debug\Sistema_de_Pontos.Fo
 D:\PUC Minas\C#\FSI - Extensão\Sistema de Pontos\obj\Debug\Sistema_de_Pontos.FormListaRegistros.resources
 D:\PUC Minas\C#\FSI - Extensão\Sistema de Pontos\obj\Debug\Sistema_de_Pontos.FormSettings.resources
 D:\PUC Minas\C#\FSI - Extensão\Sistema de Pontos\obj\Debug\Sistema_de_Pontos.ItemRegistro.resources
-D:\PUC Minas\C#\FSI - Extensão\Sistema de Pontos\obj\Debug\Sistema_de_Pontos.ListItemRegistros.resources
 D:\PUC Minas\C#\FSI - Extensão\Sistema de Pontos\obj\Debug\Sistema_de_Pontos.MainForm.resources
 D:\PUC Minas\C#\FSI - Extensão\Sistema de Pontos\obj\Debug\Sistema_de_Pontos.Properties.Resources.resources
 D:\PUC Minas\C#\FSI - Extensão\Sistema de Pontos\obj\Debug\Sistema de Pontos.csproj.GenerateResource.cache
@@ -39,3 +37,5 @@ D:\PUC Minas\C#\FSI - Extensão\Sistema de Pontos\obj\Debug\Sistema de Pontos.cs
 D:\PUC Minas\C#\FSI - Extensão\Sistema de Pontos\obj\Debug\Sistema de Pontos.csproj.CopyComplete
 D:\PUC Minas\C#\FSI - Extensão\Sistema de Pontos\obj\Debug\Sistema de Pontos.exe
 D:\PUC Minas\C#\FSI - Extensão\Sistema de Pontos\obj\Debug\Sistema de Pontos.pdb
+D:\PUC Minas\C#\FSI - Extensão\Sistema de Pontos\obj\Debug\Sistema_de_Pontos.ItemFuncionario.resources
+D:\PUC Minas\C#\FSI - Extensão\Sistema de Pontos\obj\Debug\Sistema_de_Pontos.FormCadastroFuncionario.resources

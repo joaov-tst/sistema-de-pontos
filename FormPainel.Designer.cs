@@ -45,7 +45,6 @@
             this.pnlPerfil = new System.Windows.Forms.Panel();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.lblAdmin = new System.Windows.Forms.Label();
-            this.userName = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pnlContent = new System.Windows.Forms.Panel();
@@ -136,14 +135,14 @@
             // 
             // label4
             // 
-            this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Comfortaa", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.Maroon;
-            this.label4.Location = new System.Drawing.Point(49, 17);
+            this.label4.Location = new System.Drawing.Point(49, 3);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(49, 18);
+            this.label4.Size = new System.Drawing.Size(102, 44);
             this.label4.TabIndex = 10;
-            this.label4.Text = "AJUDA";
+            this.label4.Text = "NOVO FUNCIONÁRIO";
+            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // pnlFuncionarios
             // 
@@ -215,7 +214,6 @@
             // 
             this.pnlPerfil.Controls.Add(this.pictureBox2);
             this.pnlPerfil.Controls.Add(this.lblAdmin);
-            this.pnlPerfil.Controls.Add(this.userName);
             this.pnlPerfil.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlPerfil.Location = new System.Drawing.Point(0, 0);
             this.pnlPerfil.Name = "pnlPerfil";
@@ -241,18 +239,6 @@
             this.lblAdmin.Size = new System.Drawing.Size(111, 13);
             this.lblAdmin.TabIndex = 2;
             this.lblAdmin.Text = "ADMINISTRADOR";
-            // 
-            // userName
-            // 
-            this.userName.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.userName.Font = new System.Drawing.Font("Comfortaa", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.userName.ForeColor = System.Drawing.Color.Maroon;
-            this.userName.Location = new System.Drawing.Point(0, 95);
-            this.userName.Name = "userName";
-            this.userName.Size = new System.Drawing.Size(170, 35);
-            this.userName.TabIndex = 1;
-            this.userName.Text = "João Vitor Carvalho";
-            this.userName.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // panel2
             // 
@@ -297,7 +283,6 @@
             this.pnlSettings.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.pnlAjuda.ResumeLayout(false);
-            this.pnlAjuda.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             this.pnlFuncionarios.ResumeLayout(false);
             this.pnlFuncionarios.PerformLayout();
@@ -321,7 +306,6 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Panel pnlPerfil;
         private System.Windows.Forms.Label lblAdmin;
-        private System.Windows.Forms.Label userName;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Panel pnlRegistros;
         private System.Windows.Forms.Panel pnlSettings;

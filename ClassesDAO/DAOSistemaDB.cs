@@ -136,7 +136,7 @@ namespace Sistema_de_Pontos.ClassesDAO
                             {
                                 //cmd.CommandText = @"DELETE FROM TB_ENDERECO WHERE id_endereco IN (2, 3, 4);";
                                 //cmd.CommandText = @"INSERT INTO TB_FUNCIONARIO (nome, sobrenome, cpf, endereco, telefone) VALUES ('Carlos', 'Silva', '123456789', 1, '31988776655')";
-                                cmd.CommandText = @"INSERT INTO TB_REGISTRO (FuncionarioId, Data, HorarioEntrada, HorarioInicioIntervalo, HorarioFimIntervalo, HorarioSaida) VALUES (1, '2024-06-15', '08:00', '11:00', '12:00', '17:00')";
+                                //cmd.CommandText = @"INSERT INTO TB_REGISTRO (FuncionarioId, Data, HorarioEntrada, HorarioInicioIntervalo, HorarioFimIntervalo, HorarioSaida) VALUES (1, '2024-06-15', '08:00', '11:00', '12:00', '17:00')";
                                 //cmd.CommandText = @"DROP VIEW VW_REGISTRO_FORMATADO;";
                                 cmd.ExecuteNonQuery();
                             }

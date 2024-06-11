@@ -10,6 +10,14 @@ namespace Sistema_de_Pontos
     {
         private bool status;
         private string message;
+        private string nomeFuncionario;
+
+        public string NomeFuncionario
+        {
+            get { return nomeFuncionario; }
+            set { nomeFuncionario = value; }
+        }
+
 
         public bool Status
         {
@@ -28,6 +36,5 @@ namespace Sistema_de_Pontos
             status = true;
             message = "Ponto registrado";
         }
-
     }
 }

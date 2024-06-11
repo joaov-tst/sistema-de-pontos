@@ -79,7 +79,7 @@ namespace Sistema_de_Pontos
         private void pnlAjuda_Click(object sender, EventArgs e)
         {
             TrocaSelecao(3);
-            LoadForm(new FormAjuda());
+            LoadForm(new FormCadastroFuncionario());
         }
 
         private void pnlSettings_Click(object sender, EventArgs e)

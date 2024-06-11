@@ -33,13 +33,13 @@
             this.label1 = new System.Windows.Forms.Label();
             this.btnRegistrar = new MetroFramework.Controls.MetroButton();
             this.inputTopoRegistro = new MetroFramework.Controls.MetroComboBox();
-            this.inputCPF = new MetroFramework.Controls.MetroTextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.pnlMainMessage = new System.Windows.Forms.Panel();
-            this.lblMessage = new System.Windows.Forms.Label();
             this.pnlMessage = new System.Windows.Forms.Panel();
+            this.lblMessage = new System.Windows.Forms.Label();
             this.timerMessage = new System.Windows.Forms.Timer(this.components);
+            this.inputCPF = new System.Windows.Forms.MaskedTextBox();
             this.panel1.SuspendLayout();
             this.pnlMainMessage.SuspendLayout();
             this.pnlMessage.SuspendLayout();
@@ -104,42 +104,6 @@
             this.inputTopoRegistro.TabIndex = 7;
             this.inputTopoRegistro.UseSelectable = true;
             // 
-            // inputCPF
-            // 
-            this.inputCPF.BackColor = System.Drawing.Color.MistyRose;
-            // 
-            // 
-            // 
-            this.inputCPF.CustomButton.Image = null;
-            this.inputCPF.CustomButton.Location = new System.Drawing.Point(236, 1);
-            this.inputCPF.CustomButton.Name = "";
-            this.inputCPF.CustomButton.Size = new System.Drawing.Size(33, 33);
-            this.inputCPF.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
-            this.inputCPF.CustomButton.TabIndex = 1;
-            this.inputCPF.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.inputCPF.CustomButton.UseSelectable = true;
-            this.inputCPF.CustomButton.Visible = false;
-            this.inputCPF.FontSize = MetroFramework.MetroTextBoxSize.Medium;
-            this.inputCPF.IconRight = true;
-            this.inputCPF.Lines = new string[0];
-            this.inputCPF.Location = new System.Drawing.Point(106, 65);
-            this.inputCPF.MaxLength = 32767;
-            this.inputCPF.Name = "inputCPF";
-            this.inputCPF.PasswordChar = '\0';
-            this.inputCPF.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.inputCPF.SelectedText = "";
-            this.inputCPF.SelectionLength = 0;
-            this.inputCPF.SelectionStart = 0;
-            this.inputCPF.ShortcutsEnabled = true;
-            this.inputCPF.Size = new System.Drawing.Size(270, 35);
-            this.inputCPF.TabIndex = 6;
-            this.inputCPF.UseCustomBackColor = true;
-            this.inputCPF.UseCustomForeColor = true;
-            this.inputCPF.UseSelectable = true;
-            this.inputCPF.UseStyleColors = true;
-            this.inputCPF.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            this.inputCPF.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
-            // 
             // label3
             // 
             this.label3.Dock = System.Windows.Forms.DockStyle.Top;
@@ -156,8 +120,8 @@
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.pnlMainMessage);
             this.panel1.Controls.Add(this.inputCPF);
+            this.panel1.Controls.Add(this.pnlMainMessage);
             this.panel1.Controls.Add(this.inputTopoRegistro);
             this.panel1.Controls.Add(this.btnRegistrar);
             this.panel1.Controls.Add(this.label2);
@@ -178,16 +142,6 @@
             this.pnlMainMessage.TabIndex = 11;
             this.pnlMainMessage.Visible = false;
             // 
-            // lblMessage
-            // 
-            this.lblMessage.Font = new System.Drawing.Font("Comfortaa", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMessage.Location = new System.Drawing.Point(3, 10);
-            this.lblMessage.Name = "lblMessage";
-            this.lblMessage.Size = new System.Drawing.Size(262, 25);
-            this.lblMessage.TabIndex = 0;
-            this.lblMessage.Text = "Minha mensagem";
-            this.lblMessage.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
             // pnlMessage
             // 
             this.pnlMessage.BackColor = System.Drawing.Color.Tomato;
@@ -198,9 +152,28 @@
             this.pnlMessage.Size = new System.Drawing.Size(270, 45);
             this.pnlMessage.TabIndex = 12;
             // 
+            // lblMessage
+            // 
+            this.lblMessage.Font = new System.Drawing.Font("Comfortaa", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMessage.Location = new System.Drawing.Point(3, 10);
+            this.lblMessage.Name = "lblMessage";
+            this.lblMessage.Size = new System.Drawing.Size(262, 25);
+            this.lblMessage.TabIndex = 0;
+            this.lblMessage.Text = "Minha mensagem";
+            this.lblMessage.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
             // timerMessage
             // 
             this.timerMessage.Tick += new System.EventHandler(this.timerMessage_Tick);
+            // 
+            // inputCPF
+            // 
+            this.inputCPF.Font = new System.Drawing.Font("Comfortaa", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.inputCPF.Location = new System.Drawing.Point(106, 75);
+            this.inputCPF.Mask = "000,000,000-00";
+            this.inputCPF.Name = "inputCPF";
+            this.inputCPF.Size = new System.Drawing.Size(270, 24);
+            this.inputCPF.TabIndex = 12;
             // 
             // FormRegistro
             // 
@@ -227,12 +200,12 @@
         private System.Windows.Forms.Label label1;
         private MetroFramework.Controls.MetroButton btnRegistrar;
         private MetroFramework.Controls.MetroComboBox inputTopoRegistro;
-        private MetroFramework.Controls.MetroTextBox inputCPF;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel pnlMainMessage;
         private System.Windows.Forms.Label lblMessage;
         private System.Windows.Forms.Panel pnlMessage;
         private System.Windows.Forms.Timer timerMessage;
+        private System.Windows.Forms.MaskedTextBox inputCPF;
     }
 }
